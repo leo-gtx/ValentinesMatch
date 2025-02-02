@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentines Day</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body class="gradient-background">
+  <!-- 🔥 TOP BAR -->
+  <div class="w-full bg-pink-500 text-white py-3 flex justify-between items-center px-6">
+    <h1 class="text-xl font-bold">Valentine's Match</h1>
+    <button id="createSessionBtn" class="bg-white text-pink-500 font-bold px-4 py-2 rounded-md hover:bg-gray-200">
+      Find Your Valentine 💖
+    </button>
+  </div>
+  <div class="flex pt-12 justify-center h-screen">
+    <div class="flex flex-col items-center p-4">
+      <h1 id="sessionInfo" class="text-2xl font-bold text-gray-700"></h1><br>
+      <div id="shareLinkContainer" class="mt-2"></div>
+      <img id="imageDisplay" src="./images/image1.gif" alt="Cute kitten with flowers" class="rounded-md h-[300px]" style="object-fit: cover;" />
+      <h2 id="valentineQuestion" class="text-4xl font-bold italic text-[#bd1e59] my-4">Will you be my Valentine?</h2>
+      <div class="flex gap-4 pt-[20px] items-center" id="responseButtons">
+        <button id="yesButton"
+          class="bounce2 inline-flex items-center justify-center whitespace-nowrap rounded-md text-[20px] font-medium disabled:pointer-events-none disabled:opacity-50 hover:bg-green-400 min-h-12 min-w-[75px] px-4 py-2 bg-green-500 text-white transition">
+          Yes
+        </button>
+        <button id="noButton"
+          class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-[20px] font-medium transition disabled:pointer-events-none disabled:opacity-50 hover:bg-red-700 h-12 min-w-[75px] w-auto px-4 py-2 bg-red-500 text-white">
+          No
+        </button>
+      </div>
+      <div id="responseSection">
+        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+          <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+              <tr>
+                  <th scope="col" class="px-6 py-3">
+                      Name
+                  </th>
+                  <th scope="col" class="px-6 py-3">
+                      Response
+                </th>
+              </tr>
+          </thead>
+          <tbody id="responsesList">
+            
+          </tbody>
+        </table>
+        <ul id="responsesList" class="mt-2 text-lg"></ul>
+      </div>
+      
+    </div>
+  </div>
+  <!-- FAB -->
+  <div class="floating-container">
+    <div class="floating-button shaking-box">
+      <a href="#">
+        <img src="./images/ic_giftbox.webp" style="object-fit: contain;" height="70" width="70"/>
+      </a>
+    </div>
+    <div class="element-container">
+  
+       <span class="float-element tooltip-left">
+        <a href="#">
+          <img src="./images/ic_cake.webp" style="object-fit: contain;" height="50" width="50"/>
+        </a>
+      </span>
+        <span class="float-element">
+          <a href="#">
+            <img src="./images/ic_flower_bouquet.webp" style="object-fit: contain;" height="50" width="50"/>
+          </a>
+          
+      </span>
+        <span class="float-element">
+          <a href="#">
+            <img src="./images/ic_love_letter.webp" style="object-fit: contain;" height="50" width="50"/>
+          </a>
+      </span>
+    </div>
+  </div>
+
+  <script type="module" src="./index.min.js" ></script>
+</body>
+</html>
