@@ -6,19 +6,7 @@
 
 
     const firebaseConfig = {
-      "apiKey": "AIzaSyDjGUXCcnYPAal-EpZ0LQC8gUssxXDctU8",
-
-      "authDomain": "checkers-55f7b.firebaseapp.com",
-
-      "projectId": "checkers-55f7b",
-
-      "storageBucket": "checkers-55f7b.firebasestorage.app",
-
-      "messagingSenderId": "1030093131937",
-
-      "appId": "1:1030093131937:web:97bf76c27b987793a560e0",
-
-      "measurementId": "G-3EBZ8M8D6R"
+     
 
     };
     
