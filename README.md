@@ -23,8 +23,10 @@ be display
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/CodeKageHQ/Ask-out-your-Valentine
+   git clone https://github.com/leo-gtx/Ask-out-your-Valentine
    ```
+2. Add Firebase credentials into ```firebaseConfig``` in ```index.js```
+
 3. Open ```index.html``` in your browser to view the website.
 
 No additional setup is required, as Tailwind CSS is included via CDN and JavaScript is embedded within the HTML.
@@ -35,6 +37,7 @@ No additional setup is required, as Tailwind CSS is included via CDN and JavaScr
 - Tailwind CSS
 - JavaScript
 - [canvas-confetti](https://www.npmjs.com/package/canvas-confetti) for the confetti effect
+- Firebase
 
 ## Aknowlagdement
 Thank you to for this amazing idea and code [@CodeKage]( https://github.com/CodeKageHQ/Ask-out-your-Valentine)

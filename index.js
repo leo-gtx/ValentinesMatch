@@ -47,7 +47,7 @@
 
         // If no session exists, create a new one
         if (!sessionId) {
-          sessionInfo.textContent = `No match's link found! Create a new one.`;
+          sessionInfo.textContent = `Tap on the button above to find your match.`;
           createSessionBtn.classList.remove("hidden");
           responseButtons.style.display = "none";
         } else if (sessionId === sessionStorage.getItem("sessionId")){
